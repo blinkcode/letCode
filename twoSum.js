@@ -5,7 +5,7 @@
 // 因为 nums[0] + nums[1] = 2 + 7 = 9
 /**
     * @param {number[]} nums
-    * @param {number} target
+    * @param {number} target 
     * @return {number[]}
         desc:数组的第一个数和剩下的数遍历只要第一个数和其中一个相加为target即可，
             这个地方要注意index的的位置关系
