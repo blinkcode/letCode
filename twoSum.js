@@ -11,7 +11,7 @@
             这个地方要注意index为新数组的index
     */
 var twoSum = function(nums, target) {
-    nums.map(function(value,index,array) {
+    nums.map(function(value,index,array) { 
         
     })
   // for (let i = 0; i < nums.length; i++) {
