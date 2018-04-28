@@ -25,7 +25,7 @@
  */
 var isPalindrome = function(x) {
     var flag = true;
-    if(x!=0 && (Math.abs(x)+x)===0){
+    if(x!=0 && (Math.abs(x)+x)===0){ 
         flag = false;
         return flag;
     }
