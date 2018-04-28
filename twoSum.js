@@ -8,20 +8,17 @@
     * @param {number} target
     * @return {number[]}
         desc:数组的第一个数和剩下的数遍历只要第一个数和其中一个相加为target即可，
-            这个地方要注意index为新数组的index
+            这个地方要注意index的的位置关系
     */
 var twoSum = function(nums, target) {
-    nums.map(function(value,index,array) { 
-        
-    })
-  // for (let i = 0; i < nums.length; i++) {
-  //     // var arr = nums.slice(i + 1);
-  //     var index1 = nums.findIndex(function (value, index, arr) {
-  //         return index > i && value + nums[i] === target
-  //     })
-  //     if (index1 !== -1) {
-  //         return [i, index1];
-  //     }
-  // }
+  nums.map(function(value, index, array) {});
+  for (let i = 0; i < nums.length; i++) {
+    var index1 = nums.findIndex(function(value, index, arr) {
+      return index > i && value + nums[i] === target;
+    });
+    if (index1 !== -1) {
+      return [i, index1];
+    }
+  }
 };
 console.log(twoSum([3, 2, 4], 6));
