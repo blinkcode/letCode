@@ -13,6 +13,16 @@
 输入: 10
 输出: false
 解 释: 从右向左读, 为 01 。因此它不是一个回文数。*/
+
+/**
+ * 
+ * 
+ * @param {number} x 输入的数字
+ * @returns flage
+ * @description: 1.判断如果是负数直接退出(负数不成立）
+ *                2.通过字符串分割和数组的倒序将倒着读的数得到
+ *                 3.循环判断每一项是否相等
+ */
 var isPalindrome = function(x) {
     var flag = true;
     if(x!=0 && (Math.abs(x)+x)===0){
@@ -29,4 +39,18 @@ var isPalindrome = function(x) {
     }
     return flag
 };
-isPalindrome(10)
+/**
+ * 
+ * 
+ * @param {number} x 输入的数字
+ * @description 1.上面那个太麻烦了，直接判断倒序后数组字符串是否跟原来相等即可 
+ */
+var isPalindrome1 = function(x) {
+    var arr = String(x).split('');
+    var arr1 = [...arr].reverse();
+    if(arr.toString()===arr1.toString()){
+        return true;
+    }else{
+        return false;
+    }   
+}
